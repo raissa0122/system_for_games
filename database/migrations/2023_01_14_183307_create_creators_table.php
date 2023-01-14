@@ -13,13 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('games', function (Blueprint $table) {
-            $table->id(); 
-            $table->string('name')->unique();
-            $table->string('description');
-            $table->dateTime('create_date');
-            $table->string('genre_id')->unsigned();
-            $table->string('creator_id')->unsigned;
+        Schema::create('creators', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->dateTime('date_of_starting')->unique();
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('games');
+        Schema::dropIfExists('creators');
     }
 };
