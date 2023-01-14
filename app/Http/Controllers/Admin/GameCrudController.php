@@ -23,34 +23,34 @@ class GameCrudController extends CrudController
 
     private $displayConfig =  [
             [
-                'name'=> 'name',
                 'label' => 'Name',
+                'name'=> 'name',
                 'type'=> 'text'
             ],
 
             [
-                'label' => "description",
-                'name' => "Description",
+                'label' => "Description",
+                'name' => "description",
                 'type' => 'text',
             ],
 
             [
-                'label' => "create_date",
-                'name' => "Date of created",
+                'label' => "Date of create",
+                'name' => "create_date",
                 'type' => 'datetime',
             ],
 
             [
-                'label' => "genre_id",
-                'name' => "Genre",
+                'label' => "Genre",
+                'name' => "genre_id",
                 'type' => 'select',
                 'entity' => 'genre',
                 'attribute' => 'name',
             ],
 
             [
-                'label' => "creator_id",
-                'name' => "Creator",
+                'label' => "Creator",
+                'name' => "creator_id",
                 'type' => 'select',
                 'entity' => 'creator',
                 'attribute' => 'name',
@@ -75,15 +75,17 @@ class GameCrudController extends CrudController
      * @see  https://backpackforlaravel.com/docs/crud-operation-list-entries
      * @return void
      */
+
+     protected function setupShowOperation()
+     {
+         $this->crud->addColumns($this->displayConfig);
+     }
+
+
+
     protected function setupListOperation()
     {
-        CRUD::column('name');
-        CRUD::column('description');
-        CRUD::column('create_date');
-        CRUD::column('genre');
-        CRUD::column('creator');
-        CRUD::column('created_at');
-        CRUD::column('updated_at');
+        $this->crud->addColumns($this->displayConfig);
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -102,11 +104,7 @@ class GameCrudController extends CrudController
     {
         CRUD::setValidation(GameRequest::class);
 
-        CRUD::field('name');
-        CRUD::field('description');
-        CRUD::field('create_date');
-        CRUD::field('genre');
-        CRUD::field('creator');
+        $this->crud->addFields($this->displayConfig);
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
@@ -123,6 +121,9 @@ class GameCrudController extends CrudController
      */
     protected function setupUpdateOperation()
     {
-        $this->setupCreateOperation();
+        
+        CRUD::setValidation(GameRequest::class);
+
+        $this->crud->addFields($this->displayConfig);
     }
 }
