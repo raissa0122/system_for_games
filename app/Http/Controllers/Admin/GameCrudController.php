@@ -56,6 +56,14 @@ class GameCrudController extends CrudController
                 'attribute' => 'name',
             ],
 
+            [
+                'label' => "Game Image",
+                'name' => "image",
+                'type' => 'text',
+                'view' => 'partials/image',
+                'upload' => true,
+            ]
+
         ];
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
@@ -79,6 +87,7 @@ class GameCrudController extends CrudController
      protected function setupShowOperation()
      {
          $this->crud->addColumns($this->displayConfig);
+         $this->crud->set('show.setFromDb', false)
      }
 
 
