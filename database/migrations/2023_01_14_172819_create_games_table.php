@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('games', function (Blueprint $table) {
             $table->id(); 
             $table->string('name')->unique();
-            $table->string('description');
+            $table->longText('description');
             $table->dateTime('create_date');
-            $table->string('genre_id')->unsigned();
-            $table->string('creator_id')->unsigned;
+            $table->integer('genre_id')->unsigned();
+            $table->integer('creator_id')->unsigned();
             $table->timestamps();
         });
     }
