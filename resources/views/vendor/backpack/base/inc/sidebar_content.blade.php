@@ -4,3 +4,4 @@
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('user') }}"><i class="nav-icon la la-th-list"></i> Users</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('game') }}"><i class="nav-icon la la-th-list"></i> Games</a></li>
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('genre') }}"><i class="nav-icon la la-th-list"></i> Genres</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('creator') }}"><i class="nav-icon la la-th-list"></i> Creators</a></li>
