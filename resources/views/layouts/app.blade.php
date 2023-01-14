@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>SaaSpal - SaaS and Software Landing Page Template</title>
+    <title>Game System</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -75,25 +75,22 @@
                   class="collapse navbar-collapse sub-menu-bar"
                   id="navbarSupportedContent"
                 >
-                  <ul id="nav" class="navbar-nav ms-auto">
+                 <ul id="nav" class="navbar-nav ms-auto">
                     <li class="nav-item">
                       <a class="page-scroll active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#features">Features</a>
+                      <a class="page-scroll" href="{{ backpack_url('user')}}"">Users</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#about">About</a>
+                      <a class="page-scroll" href="{{ backpack_url('game')}}">Games</a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="page-scroll" href="#why">Why</a>
+                        <a class="page-scroll" href="{{ backpack_url('genre')}}">Genres</a>
                     </li>
                     <li class="nav-item">
-                      <a href="javascript:void(0)">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="javascript:void(0)">Clients</a>
+                        <a href="{{ backpack_url('creator')}}">Creators</a>
                     </li>
                   </ul>
                 </div>
