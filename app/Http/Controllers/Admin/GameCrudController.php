@@ -6,6 +6,8 @@ use App\Http\Requests\GameRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 use DateTime;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * Class GameCrudController
@@ -57,6 +59,14 @@ class GameCrudController extends CrudController
                 'attribute' => 'name',
             ],
 
+            [
+                'label' => "Game Image",
+                'name' => "image",
+                'type' => ($show ? 'view' : 'upload'),
+                'view' => 'partials/image',
+                'upload' => true,
+            ]
+
         ];
     }
     /**
@@ -79,13 +89,8 @@ class GameCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::column('name');
-        CRUD::column('description');
-        CRUD::column('create_date');
-        CRUD::column('genre');
-        CRUD::column('creator');
-        CRUD::column('created_at');
-        CRUD::column('updated_at');
+        $this->crud->set('show.setFromDb', false);
+        $this->crud->addColumns($this->getFieldsData(TRUE));
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
