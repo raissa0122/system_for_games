@@ -25,7 +25,12 @@ class GameRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+             'name' => 'required|min:3|max:255',
+             'description' => 'required|min:5|max:255',
+             'create_date' => 'required|min:5|max:255',
+             'genre' => 'required|min:3|max:255',
+             'creator' => 'required|min:3|max:255'
+
         ];
     }
 
