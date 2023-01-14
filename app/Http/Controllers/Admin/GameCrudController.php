@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests\GameRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
+use DateTime;
 
 /**
  * Class GameCrudController
@@ -19,6 +20,43 @@ class GameCrudController extends CrudController
     use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 
+
+    private $displayConfig =  [
+            [
+                'name'=> 'name',
+                'label' => 'Name',
+                'type'=> 'text'
+            ],
+
+            [
+                'label' => "description",
+                'name' => "Description",
+                'type' => 'text',
+            ],
+
+            [
+                'label' => "create_date",
+                'name' => "Date of created",
+                'type' => 'datetime',
+            ],
+
+            [
+                'label' => "genre_id",
+                'name' => "Genre",
+                'type' => 'select',
+                'entity' => 'genre',
+                'attribute' => 'name',
+            ],
+
+            [
+                'label' => "creator_id",
+                'name' => "Creator",
+                'type' => 'select',
+                'entity' => 'creator',
+                'attribute' => 'name',
+            ],
+
+        ];
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
      * 
