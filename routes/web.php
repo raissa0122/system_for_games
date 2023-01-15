@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\GamesViewController;
+use App\Http\Controllers\GameViewController;
+use App\Http\Controllers\GenresViewController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 
@@ -16,4 +17,6 @@ use App\Http\Controllers\IndexController;
 */
 
 Route::get('/', [IndexController::class, 'index']);
-Route::get('/game_view',[GamesViewController::class,'games']);
+Route::get('/games_view',[GameViewController::class,'games']);
+Route::get('/genres_view',[GenresViewController::class,'genres']);
+

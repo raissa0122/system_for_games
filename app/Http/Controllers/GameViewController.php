@@ -7,7 +7,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class GamesViewController extends Controller
+class GameViewController extends Controller
 {
     public function creators()
     {
