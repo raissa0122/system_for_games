@@ -27,10 +27,10 @@ class GameRequest extends FormRequest
         return [
              'name' => 'required|min:3|max:255',
              'description' => 'required|min:5|max:255',
-             'create_date' => 'required|min:5|max:255',
+             //'create_date' => 'required|min:5|max:255',
              'genre_id' => 'required|exists:genres,id',
              'creator_id' => 'required|exists:creators,id',
-             'image' => 'required|mimetypes:png,jpeg,jpg,webp,jfif'
+            // 'image' => 'required|mimetypes:png,jpeg,jpg,webp,jfif'
 
         ];
     }

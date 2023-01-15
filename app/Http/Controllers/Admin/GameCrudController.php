@@ -79,6 +79,8 @@ class GameCrudController extends CrudController
         CRUD::setModel(\App\Models\Game::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/game');
         CRUD::setEntityNameStrings('game', 'games');
+
+        $this->crud->addFields($this->getFieldsData());
     }
 
     /**

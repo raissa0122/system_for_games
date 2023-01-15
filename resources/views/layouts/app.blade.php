@@ -9,7 +9,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="assets/img/logoorg.png"
+      href="assets/img/favicon.png"
     />
     <!-- Place favicon.ico in the root directory -->
 
@@ -55,7 +55,7 @@
             <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
-                  <img src="assets/img/logoorg.png" alt="Logo" />
+                  <img src="assets/img/logo/logo.svg" alt="Logo" />
                 </a>
                 <button
                   class="navbar-toggler"
