@@ -80,14 +80,14 @@
                       <a class="page-scroll active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="{{ backpack_url('user')}}"">Users</a>
+                      <a  href="{{ backpack_url('user')}}"">Users</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="{{ backpack_url('game')}}">Games</a>
+                      <a  href="{{ backpack_url('game')}}">Games</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="page-scroll" href="{{ backpack_url('genre')}}">Genres</a>
+                        <a href="{{ backpack_url('genre')}}">Genres</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ backpack_url('creator')}}">Creators</a>
