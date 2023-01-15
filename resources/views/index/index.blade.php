@@ -7,8 +7,8 @@
                 <div class="col-sm-6">
                     <div class="single-about-us">
                         <div class="about-us-txt">
-                            <h2>{{$title}}</h2>
-                            {!! $text !!}
+                            <h2>Game System</h2>
+                            The game system was created with the aim of making it easier for users to access information about the most popular games in the world!
                         </div><!--/.about-us-txt-->
                     </div><!--/.single-about-us-->
                 </div><!--/.col-->

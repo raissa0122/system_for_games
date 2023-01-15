@@ -9,7 +9,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="assets/img/favicon.png"
+      href="assets/img/logoorg.png"
     />
     <!-- Place favicon.ico in the root directory -->
 
@@ -55,7 +55,7 @@
             <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
-                  <img src="assets/img/logo/logo.svg" alt="Logo" />
+                  <img src="assets/img/logoorg.png" alt="Logo" />
                 </a>
                 <button
                   class="navbar-toggler"
@@ -114,17 +114,16 @@
           <div class="col-lg-6">
             <div class="hero-content">
               <h1 class="wow fadeInUp" data-wow-delay=".4s">
-                Your using free lite version
+                GameSystem
               </h1>
               <p class="wow fadeInUp" data-wow-delay=".6s">
-                Please, purchase full version to get all sections, features and
-                permission to remove footer credit.
+                Explore the games you want here!
               </p>
               <a
-                href="javascript:void(0)"
+                href="{{ backpack_url('game')}}"
                 class="main-btn border-btn btn-hover wow fadeInUp"
                 data-wow-delay=".6s"
-                >Purchase Now</a
+                >See games here</a
               >
               <a href="#features" class="scroll-bottom">
                 <i class="lni lni-arrow-down"></i
@@ -160,8 +159,7 @@
                   </a>
                 </div>
                 <p class="desc mb-30 text-white">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  dinonumy eirmod tempor invidunt.
+                  The game system was created with the aim of making it easier for users to access information about the most popular games in the world!
                 </p>
                 <ul class="socials">
                   <li>
@@ -193,7 +191,7 @@
                 <h3>About Us</h3>
                 <ul class="links">
                   <li><a href="javascript:void(0)">Home</a></li>
-                  <li><a href="javascript:void(0)">Feature</a></li>
+                  <li><a href="{{ backpack_url('user')}}"">Users</a></li>
                   <li><a href="javascript:void(0)">About</a></li>
                   <li><a href="javascript:void(0)">Testimonials</a></li>
                 </ul>
