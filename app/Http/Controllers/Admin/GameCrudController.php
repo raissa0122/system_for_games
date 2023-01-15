@@ -114,6 +114,8 @@ class GameCrudController extends CrudController
         CRUD::field('create_date');
         CRUD::field('genre_id');
         CRUD::field('creator_id');
+        CRUD::field('image');
+
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:

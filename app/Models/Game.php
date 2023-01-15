@@ -46,7 +46,7 @@ public function setImageAttribute($value)
 {
     $attribute_name = "image";
     // destination path relative to the disk above
-    $destination_path = "articles";
+    $destination_path = "games";
 
     // if the image was erased
     if ($value==null) {
