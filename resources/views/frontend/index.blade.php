@@ -1,7 +1,7 @@
 @extends('frontend.app')
 
 @section('header')
-<div class="container">	
+<div class="container">
     <div class="header-left">
         <ul class="pull-left">
             <li>
@@ -26,7 +26,7 @@
                 <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
                     Log in
                 </a>
-                
+
             </li><!--/li -->
             <li>
                 <div class="social-icon">
@@ -47,7 +47,7 @@
 <div class="container">
     <div class="menubar">
         <nav class="navbar navbar-default">
-        
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -64,18 +64,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="smooth-menu">
-                        <a href="/">Home</a>
-                    </li>
-                    <li class="smooth-menu"><a href="/games_view">Games</a></li>
-                    <li class="smooth-menu"><a href="/creators_view">Creators</a></li>
-                    <li class="smooth-menu"><a href="/genres_view">Genres</a></li>
-                    <li class="smooth-menu"><a href="/admin">Sign Up</a></li>
-                    <li>
-                        <a href="#">
-                            <span class="lnr lnr-cart"></span>
-                        </a>
-                    </li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/games_view">Games</a></li>
+                    <li><a href="/creators_view">Creators</a></li>
+                    <li><a href="/genres_view">Genres</a></li>
+                    <li><a href="/admin">Sign Up</a></li>
                     <li class="search">
                         <form action="">
                             <input type="text" name="search" placeholder="Search....">
@@ -124,14 +117,14 @@
                     <div class="hm-foot-title">
                         <h4>Useful Links</h4>
                     </div><!--/.hm-foot-title-->
-                    <div class="footer-menu ">	  
+                    <div class="footer-menu ">
                         <ul class="">
                             <li><a href="index.html" >Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="services.html">Service</a></li>
                             <li><a href="portfolio.html">Portfolio</a></li>
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact us</a></li> 
+                            <li><a href="contact.html">Contact us</a></li>
                         </ul>
                     </div><!-- /.footer-menu-->
                 </div><!--/.hm-footer-widget-->
@@ -196,7 +189,7 @@
         </div><!--/.col-->
         <div class="col-sm-5">
             <div class="foot-menu pull-right
-            ">	  
+            ">
                 <ul>
                     <li ><a href="#">legal</a></li>
                     <li ><a href="#">sitemap</a></li>

@@ -4,7 +4,7 @@
 <div class="container">
     <div class="menubar">
         <nav class="navbar navbar-default">
-        
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -21,18 +21,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="smooth-menu">
+                    <li>
                         <a href="#home">Home</a>
                     </li>
-                    <li class="smooth-menu"><a href="/games_view">Games</a></li>
-                    <li class="smooth-menu"><a href="/creators_view">Creators</a></li>
-                    <li class="smooth-menu"><a href="/genres_view">Genres</a></li>
-                    <li class="smooth-menu"><a href="/admin">Sign Up</a></li>
-                    <li>
-                        <a href="#">
-                            <span class="lnr lnr-cart"></span>
-                        </a>
-                    </li>
+                    <li><a href="/games_view">Games</a></li>
+                    <li><a href="/creators_view">Creators</a></li>
+                    <li><a href="/genres_view">Genres</a></li>
+                    <li><a href="/admin">Sign Up</a></li>
                     <li class="search">
                         <form action="">
                             <input type="text" name="search" placeholder="Search....">
@@ -49,7 +44,7 @@
 @endsection
 
 @section('table')
-<div class="container">    
+<div class="container">
                     <h1
                         class="mb-8 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug"
                     >
@@ -63,7 +58,7 @@
 @endsection
 
 @section('content')
-    <div class="container">   
+    <div class="container">
                 <table class="styled-table">
                     <style>
                     table, th, td {

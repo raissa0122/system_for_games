@@ -1,10 +1,51 @@
 @extends('frontend.app')
+@section('header')
+    <div class="container">
+        <div class="header-left">
+            <ul class="pull-left">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-phone" aria-hidden="true"></i> +359 89 830 9484
+                    </a>
+                </li><!--/li-->
+                <li>
+                    <a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>raissa@gmail.com
+                    </a>
+                </li><!--/li-->
+            </ul><!--/ul-->
+        </div><!--/.header-left -->
+        <div class="header-right pull-right">
+            <ul>
+                <li class="reg">
+                    <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
+                        Register
+                    </a>
+                    /
+                    <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        Log in
+                    </a>
 
+                </li><!--/li -->
+                <li>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        </ul><!--/.ul -->
+                    </div><!--/.social-icon -->
+                </li><!--/li -->
+            </ul><!--/ul -->
+        </div><!--/.header-right -->
+    </div>
+@endsection
 @section('menu')
 <div class="container">
     <div class="menubar">
         <nav class="navbar navbar-default">
-        
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -21,18 +62,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="smooth-menu">
+                    <li>
                         <a href="#home">Home</a>
                     </li>
-                    <li class="smooth-menu"><a href="/games_view">Games</a></li>
-                    <li class="smooth-menu"><a href="/creators_view">Creators</a></li>
-                    <li class="smooth-menu"><a href="/genres_view">Genres</a></li>
-                    <li class="smooth-menu"><a href="/admin">Sign Up</a></li>
-                    <li>
-                        <a href="#">
-                            <span class="lnr lnr-cart"></span>
-                        </a>
-                    </li>
+                    <li><a href="/games_view">Games</a></li>
+                    <li><a href="/creators_view">Creators</a></li>
+                    <li><a href="/genres_view">Genres</a></li>
+                    <li><a href="/admin">Sign Up</a></li>
                     <li class="search">
                         <form action="">
                             <input type="text" name="search" placeholder="Search....">
@@ -77,7 +113,7 @@
 
 
 @section('content')
-    <div class="container">   
+    <div class="container">
                 <table class="styled-table">
                     <style>
                     table, th, td {
@@ -103,18 +139,18 @@
                             <td>{{$game->create_date}}</td>
                             <td>
                                 @foreach($creators as $creator)
-        
+
                                     @if( $creator->id == $game->creator_id )
-        
+
                                         {{ ($creator->name)}}<br>
                                     @endif
                                 @endforeach
                             </td>
                             <td>
                                 @foreach($genres as $genre)
-        
+
                                     @if( $genre->id == $game->genre_id )
-        
+
                                         {{ ($genre->name)}}<br>
                                     @endif
                                 @endforeach

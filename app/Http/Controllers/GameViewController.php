@@ -22,7 +22,7 @@ class GameViewController extends Controller
         return (
         view('genres_view', ['genres' => $genres]));
     }
-    
+
     public function games()
     {
         $games = DB::table('games')->select('name', 'description', 'create_date', 'genre_id', 'creator_id', 'image')->get();
@@ -31,5 +31,9 @@ class GameViewController extends Controller
         return (
         view('game_view', ['games' => $games, 'creators' => $creators, 'genres' => $genres]));
     }
+
+
+
+
 }
 
