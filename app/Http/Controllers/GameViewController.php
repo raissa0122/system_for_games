@@ -11,7 +11,7 @@ class GameViewController extends Controller
 {
     public function creators()
     {
-        $creators = DB::table('creators')->select('date_of_starting','name')->get();
+        $creators = DB::table('creators')->select('name')->get();
         return (
         view('creators_view', ['creators' => $creators]));
     }
@@ -32,3 +32,4 @@ class GameViewController extends Controller
         view('game_view', ['games' => $games, 'creators' => $creators, 'genres' => $genres]));
     }
 }
+

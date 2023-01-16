@@ -16,7 +16,9 @@ use App\Http\Controllers\IndexController;
 |
 */
 
-Route::get('/', [IndexController::class, 'index']);
+Route::get('/', [IndexController::class,'index']);
+
 Route::get('/games_view',[GameViewController::class,'games']);
 Route::get('/genres_view',[GenresViewController::class,'genres']);
+Route::get('/creators_view',[CreatorsViewController::class,'creators']);
 
