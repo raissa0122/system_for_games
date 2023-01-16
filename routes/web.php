@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\GameViewController;
 use App\Http\Controllers\GenresViewController;
+use App\Http\Controllers\CreatorsViewController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 

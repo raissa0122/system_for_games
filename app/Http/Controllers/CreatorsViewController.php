@@ -11,7 +11,7 @@ class CreatorsViewController extends Controller
 {
     public function creators()
     {
-        $creators = DB::table('creators')->select('name')->get();
+        $creators = DB::table('creators')->select('name', 'date_of_starting')->get();
         return (
         view('creators_view', ['creators' => $creators]));
     }
