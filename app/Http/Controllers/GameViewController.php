@@ -47,11 +47,11 @@ class GameViewController extends Controller
             ->orWhere('create_date', 'LIKE', '%' . $searchStr . '%')
             ->orWhereHas('creator', function (Builder $query) use ($searchStr) {
                 $query->where('name', 'like', '%' . $searchStr . '%');
-            })->orWhereHas('genres', function (Builder $query) use ($searchStr) {
+            })->orWhereHas('genre', function (Builder $query) use ($searchStr) {
                 $query->where('name', 'like', '%' . $searchStr . '%');
             })->get();
 
-        return view('games_view', ['games' => $games,'creators' => $creators, 'genres' => $genres]);
+        return view('game_view', ['games' => $games,'creators' => $creators, 'genres' => $genres]);
     }
 
 

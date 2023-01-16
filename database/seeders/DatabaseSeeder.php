@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             GameSeeder::class,
             GenreSeeder::class,
             CreatorSeeder::class,
+            UserSeeder::class,
         ]);
 
     }
