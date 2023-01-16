@@ -141,7 +141,7 @@
                     <li><a href="/genres_view">Genres</a></li>
                     <li><a href="/admin">Sign Up</a></li>
 
-
+                    <!--search-->
                     <li class="search">
                         <form action="{{ route('games.search') }}" method="GET">
                             <label for="search" class="sr-only">
