@@ -55,7 +55,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="{{ asset('frontend/assets/images')}}/logo/logo.png" alt="logo">
+                    <h2 style = color:whitesmoke;}>GameLoop</h2>
                 </a>
             </div><!--/.navbar-header -->
 
@@ -63,7 +63,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li><a href="/games_view">Games</a></li>
                     <li><a href="/creators_view">Creators</a></li>
@@ -118,11 +118,6 @@
 @section('content')
     <div class="container">
                 <table class="styled-table">
-                    <style>
-                    table, th, td {
-                      border: 1px solid black;
-                    }
-                    </style>
                     <thead>
                     <tr>
                         <th>Game Image</th>

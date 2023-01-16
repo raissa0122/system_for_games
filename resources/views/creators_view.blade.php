@@ -1,5 +1,48 @@
 @extends('frontend.app')
 
+@section('header')
+    <div class="container">
+        <div class="header-left">
+            <ul class="pull-left">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-phone" aria-hidden="true"></i> +359 89 830 9484
+                    </a>
+                </li><!--/li-->
+                <li>
+                    <a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>raissa@gmail.com
+                    </a>
+                </li><!--/li-->
+            </ul><!--/ul-->
+        </div><!--/.header-left -->
+        <div class="header-right pull-right">
+            <ul>
+                <li class="reg">
+                    <a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
+                        Register
+                    </a>
+                    /
+                    <a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        Log in
+                    </a>
+
+                </li><!--/li -->
+                <li>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        </ul><!--/.ul -->
+                    </div><!--/.social-icon -->
+                </li><!--/li -->
+            </ul><!--/ul -->
+        </div><!--/.header-right -->
+    </div>
+@endsection
+
 @section('menu')
 <div class="container">
     <div class="menubar">
@@ -14,7 +57,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="{{ asset('frontend/assets/images')}}/logo/logo.png" alt="logo">
+                    <h2 style = color:whitesmoke;}>GameLoop</h2>
                 </a>
             </div><!--/.navbar-header -->
 

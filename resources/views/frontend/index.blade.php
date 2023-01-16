@@ -57,7 +57,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="{{ asset('frontend/assets/images')}}/logo/logo.png" alt="logo">
+                    <h2 style = color:whitesmoke;}>GameLoop</h2>
                 </a>
             </div><!--/.navbar-header -->
 
