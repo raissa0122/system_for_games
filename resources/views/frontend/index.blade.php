@@ -27,56 +27,6 @@
                     Log in
                 </a>
                 
-                <!-- small modal -->
-                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                    <div class="modal-dialog modal-sm" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                     <span aria-hidden="true">
-                                         <i class="fa fa-close"></i>
-                                     </span>
-                                 </button> 
-                                <h4 class="modal-title" id="mySmallModalLabel">
-                                    Sign In
-                                </h4> 
-                                <form class="sm-frm" style="padding:25px">
-                                    <label>Name :</label>
-                                    <input type="text" class="form-control" placeholder="Enter Email">
-                                    <label>Passoward :</label>
-                                    <input type="text" class="form-control" placeholder="Enter Passoward">
-                                    <label><input type="checkbox" name="personality"> Remenber Me</label>
-                                    <button type="button" class="btn btn-default pull-right">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- large modal -->
-                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                     <span aria-hidden="true">
-                                         <i class="fa fa-close"></i>
-                                     </span>
-                                </button>  
-                                <h4 class="modal-title" id="myLargeModalLabel">Register</h4> 
-                                <form class="lg-frm" style="padding:25px">
-                                    <label>Name :</label>
-                                    <input type="text" class="form-control" placeholder="Enter Name">
-                                    <label>Email :</label>
-                                    <input type="text" class="form-control" placeholder="Enter Email">
-                                    <label>Passoward :</label>
-                                    <input type="text" class="form-control" placeholder="Enter Passoward">
-                                    <button type="button" class="btn btn-default pull-right">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </li><!--/li -->
             <li>
                 <div class="social-icon">
@@ -115,14 +65,12 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="smooth-menu">
-                        <a href="#home">Home</a>
+                        <a href="/">Home</a>
                     </li>
-                    <li class="smooth-menu"><a href="#about">About</a></li>
-                    <li class="smooth-menu"><a href="#service">Service</a></li>
-                    <li class="smooth-menu"><a href="#project">Project</a></li>
-                    <li class="smooth-menu"><a href="#team">Team</a></li>
-                    <li class="smooth-menu"><a href="#blog">Blog</a></li>
-                    <li class="smooth-menu"><a href="#contact">Contact</a></li>
+                    <li class="smooth-menu"><a href="/games_view">Games</a></li>
+                    <li class="smooth-menu"><a href="/creators_view">Creators</a></li>
+                    <li class="smooth-menu"><a href="/genres_view">Genres</a></li>
+                    <li class="smooth-menu"><a href="/admin">Sign Up</a></li>
                     <li>
                         <a href="#">
                             <span class="lnr lnr-cart"></span>
