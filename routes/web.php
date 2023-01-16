@@ -4,7 +4,6 @@ use App\Http\Controllers\GameViewController;
 use App\Http\Controllers\GenresViewController;
 use App\Http\Controllers\CreatorsViewController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\IndexController;
 
 /*

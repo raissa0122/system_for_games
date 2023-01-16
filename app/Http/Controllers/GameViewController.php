@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Game;
+use App\Models\Genre;
+use App\Models\Creator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -37,15 +39,15 @@ class GameViewController extends Controller
     public function search(Request $request)
     {
         $games = DB::table('games')->select('name','description', 'create_date', 'genre_id', 'creator_id')->get();
-        $creators = DB::table('creators')->select('name', 'id')->get();
+        $creators = DB::table('creators')->select('id','name')->get();
         $genres = DB::table('genres')->select('id','name')->get();
 
         $searchStr = $request->get('q');
         $games = Game::orWhere('name', 'LIKE', '%' . $searchStr . '%')
             ->orWhere('create_date', 'LIKE', '%' . $searchStr . '%')
-            ->orWhereHas('creator', function (Builder $query) use ($searchStr)
-               {$query->where('name', 'like', '%' . $searchStr . '%');})
-            ->orWhereHas('genres', function (Builder $query) use ($searchStr) {
+            ->orWhereHas('creator', function (Builder $query) use ($searchStr) {
+                $query->where('name', 'like', '%' . $searchStr . '%');
+            })->orWhereHas('genres', function (Builder $query) use ($searchStr) {
                 $query->where('name', 'like', '%' . $searchStr . '%');
             })->get();
 

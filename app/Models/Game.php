@@ -40,9 +40,7 @@ class Game extends Model
     });
 }
 
-
-
-public function setImageAttribute($value)
+    public function setImageAttribute($value)
 {
     $attribute_name = "image";
     // destination path relative to the disk above
@@ -72,12 +70,12 @@ public function setImageAttribute($value)
     */
     public function genre()
     {
-        return $this->belongsTo(Genre::class, 'genre_id', 'id');
+        return $this->belongsTo('App\Models\Genre');
     }
 
     public function creator()
     {
-        return $this->belongsTo(Creator::class, 'creator_id', 'id');
+        return $this->belongsTo('App\Models\Creator');
     }
 
 
