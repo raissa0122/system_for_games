@@ -69,9 +69,12 @@
                     <li><a href="/creators_view">Creators</a></li>
                     <li><a href="/genres_view">Genres</a></li>
                     <li><a href="/admin">Sign Up</a></li>
-                    <li class="search">
-                        <form action="">
-                            <input type="text" name="search" placeholder="Search....">
+                    <li>
+                        <form action="{{ route('game.search') }}" method="GET">
+                            <label for="search" class="sr-only">
+                                Search
+                            </label>
+                            <input type="text" name="q" placeholder="Search....">
                             <a href="#">
                                 <span class="lnr lnr-magnifier"></span>
                             </a>

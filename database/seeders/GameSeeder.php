@@ -21,22 +21,22 @@ class GameSeeder extends Seeder
         'year' => '2017-03-27',
         'genre_id'=>'1',
         'creator_id'=> '1',
-        'image' => 'https://www.gamervines.com/wp-content/uploads/2021/07/PUBG-PC.jpg',
+        'image' => 'fontend/assets/gamesimg/PUBG-PC.jpg',
             ],
         ['name'=>'GTA',
             'description'=>'The story of three uniquely-different criminals as they commit daring and profitable heists across the sprawling city of Los Santos. ',
             'year' => '2013-09-17',
             'genre_id'=>'2',
             'creator_id'=> '2',
-            'image' => 'https://cdn.akamai.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1671485100',
+            'image' => 'fontend/assets/gamesimg/gta',
 
         ],
         ['name'=>'Homescapes',
             'description'=>'The storyline narrates about attempts of the games protagonist, Austin the Butler, to restore his childhood home.',
             'year' => '2017-07-26',
-            'genre_id'=>'3', 
+            'genre_id'=>'3',
             'creator_id'=> '3',
-            'image' => 'https://miro.medium.com/max/1152/0*YViKlVlWZxDByQB_.jpeg',
+            'image' => 'fontend/assets/gamesimg/homscapes',
 
         ],
         ['name'=>'Fireboy and Watergirl',
@@ -44,7 +44,7 @@ class GameSeeder extends Seeder
             'year' => '2009-11-19',
             'genre_id'=>'2',
             'creator_id'=> '4',
-            'image' => 'https://images.crazygames.com/games/fireboy-and-watergirl-5-elements/cover-1586285304860.jpg?auto=format,compress&q=75&cs=strip',
+            'image' => 'fontend/assets/gamesimg/fireboywatergiril.png',
 
         ],
         ['name'=>'DEAD BY DAYLIGHT',
@@ -52,7 +52,7 @@ class GameSeeder extends Seeder
             'year' => '2016-06-14',
             'genre_id'=>'4',
             'creator_id'=> '5',
-            'image' => 'https://cdn1.epicgames.com/offer/611482b8586142cda48a0786eb8a127c/EGS_DeadbyDaylight_BehaviourInteractive_S1_2560x1440-a32581cf9948a9a2e24b2ff15c1577c7',
+            'image' => 'fontend/assets/gamesimg/dbdl.jpg',
 
         ],
         ['name'=>'Garden Affairs',
@@ -60,7 +60,7 @@ class GameSeeder extends Seeder
             'year' => '2019-07-22',
             'genre_id'=>'3',
             'creator_id'=> '3',
-            'image' => 'https://i.ytimg.com/vi/rJ5q3oWvpGc/maxresdefault.jpg',
+            'image' => 'fontend/assets/gamesimg/gardenafairs.jpg',
 
         ],
         ['name'=>'Subway Surf',
@@ -68,7 +68,7 @@ class GameSeeder extends Seeder
             'year' => '2012-05-23',
             'genre_id'=>'5',
             'creator_id'=> '6',
-            'image' => 'https://drift-hunters.co/upload/imgs/subway-surfers1.jpg',
+            'image' => 'fontend/assets/gamesimg/subway-surfers.jpg',
 
         ],
         ['name'=>'Clash Of Clans',
@@ -76,7 +76,7 @@ class GameSeeder extends Seeder
             'year' => '2012-11-02',
             'genre_id'=>'6',
             'creator_id'=> '7',
-            'image' => 'https://earlygame.com/uploads/images/_body/ClashofclansCharacter-Guide.jpg',
+            'image' => 'fontend/assets/gamesimg/ClashofclansCharacter-Guide.jpg',
 
         ],
         ['name'=>'Resident Evil 4',
@@ -84,7 +84,7 @@ class GameSeeder extends Seeder
             'year' => '2005-01-11',
             'genre_id'=>'4',
             'creator_id'=> '8',
-            'image' => 'https://cdn.akamai.steamstatic.com/steam/apps/2050650/capsule_616x353.jpg?t=1666665420',
+            'image' => 'fontend/assets/gamesimg/residentevil4.jpg',
 
         ],
         ['name'=>'FIFA 22',
@@ -92,7 +92,7 @@ class GameSeeder extends Seeder
             'year' => '2021-09-27',
             'genre_id'=>'7',
             'creator_id'=> '9',
-            'image' => 'https://cdn.cloudflare.steamstatic.com/steam/apps/1506830/capsule_616x353.jpg?t=1653581021',
+            'image' => 'fontend/assets/gamesimg/fifa22.jpg',
 
         ],
         ['name'=>'Lady Popular',
@@ -100,7 +100,7 @@ class GameSeeder extends Seeder
             'year' => '2009-11-14',
             'genre_id'=>'3',
             'creator_id'=> '10',
-            'image' => 'https://i.pinimg.com/originals/6a/f3/b5/6af3b5bde3fc83e632f22efc7195ba90.jpg',
+            'image' => 'fontend/assets/gamesimg/ladypopular.jpg',
         ],
     ]);
 }
